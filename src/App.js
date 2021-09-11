@@ -46,7 +46,7 @@ function App() {
               selectedItem.length>0 ?  <Subcategory subSelections={subSelections} onSelect={subHandler} /> : null
             }
           </div>
-          <button  onClick={()=>{setShow(!show)}} type="button" className="btn btn-secondary">Get Images</button>{show &&  <DogImage subSelections={subSelections} category={selectedItem} /> }
+          <button  onClick={()=>{setShow(!show)}} type="button" className="btn btn-secondary">Get Images</button>{show &&  <DogImage  category={selectedItem} /> }
       </div>
     </div>
   )
